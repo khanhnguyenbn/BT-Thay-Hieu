@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-// write object to file
+// write object to file with base information when they not yet register subject to learn and subject to teach
 public class WriteObjectToFile {
 
 	public static void main(String args[]) {
