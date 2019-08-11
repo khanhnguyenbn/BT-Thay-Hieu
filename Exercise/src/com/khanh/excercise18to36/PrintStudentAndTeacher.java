@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
-// display student and teacher
+// display student and teacher with base information
 public class PrintStudentAndTeacher {
 
 	// sort by first name
@@ -25,19 +25,20 @@ public class PrintStudentAndTeacher {
 
 	// sort by full name
 	static void sortByFullName(List<People> list) {
-		
+
 		Comparator<People> comparatorByFirstName = new Comparator<People>() {
 			@Override
 			public int compare(People o1, People o2) {
 
 				// with full name = first name + " " + last name
-				return (o2.getFirstName() + " " + o2.getLastName()).compareTo((o1.getFirstName() + " " + o1.getLastName()));
+				return (o2.getFirstName() + " " + o2.getLastName())
+						.compareTo((o1.getFirstName() + " " + o1.getLastName()));
 			}
 		};
 		Collections.sort(list, comparatorByFirstName);
 	}
 
-	//test
+	// test
 	public static void main(String[] args) {
 		List<People> list = new ArrayList();
 
@@ -82,7 +83,7 @@ public class PrintStudentAndTeacher {
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i).toString());
 		}
-		
+
 		System.out.println("sort by full Name");
 		sortByFullName(list);
 		for (int i = 0; i < list.size(); i++) {

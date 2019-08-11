@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Class {
+	// list subjects in a class. can be another collection
     private List<Subject> subjects = new ArrayList<>();
  
-    public void addItem(Subject item) {
-        subjects.add(item);
+    public void addSubject(Subject subject) {
+        subjects.add(subject);
     }
  
     public Iterator<Subject> iterator() {

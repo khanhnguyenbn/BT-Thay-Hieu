@@ -1,5 +1,6 @@
 package com.khanh.facade;
 
+// define the way to payment
 public class PaymentService {
 
 	public void paymentByPaypal() {

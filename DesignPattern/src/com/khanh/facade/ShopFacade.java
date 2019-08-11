@@ -10,6 +10,7 @@ public class ShopFacade {
     private EmailService emailService;
     private SmsService smsService;
  
+    // int all services
     private ShopFacade() {
         accountService = new AccountService();
         paymentService = new PaymentService();
@@ -18,10 +19,12 @@ public class ShopFacade {
         smsService = new SmsService();
     }
  
+    // return instance of this class
     public static ShopFacade getInstance() {
         return INSTANCE;
     }
  
+    
     public void buyProductByCashWithFreeShipping(String email) {
         accountService.getAccount(email);
         paymentService.paymentByCash();

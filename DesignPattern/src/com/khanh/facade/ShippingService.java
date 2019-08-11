@@ -1,5 +1,6 @@
 package com.khanh.facade;
 
+// define the way to ship
 public class ShippingService {
 
 	public void freeShipping() {

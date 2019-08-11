@@ -10,11 +10,10 @@ import java.util.Scanner;
 import com.mysql.cj.jdbc.result.ResultSetMetaData;
 
 public class DBConnection {
-	
+
 	public static final String DATABASE_NAME = "school";
 	public static final String USER_NAME = "root";
 	public static final String PASSWORD = "123456";
-	
 
 	static final String BASE_URL = "jdbc:mysql://localhost:3306/";
 
@@ -38,7 +37,7 @@ public class DBConnection {
 		}
 		if (connection != null) {
 			System.out.println("connect to: " + databaseName + " successfully");
-			
+
 			// display all tables when connect to DB successfully
 			System.out.println("List tables in database");
 			displayAllTable(connection);
@@ -164,7 +163,7 @@ public class DBConnection {
 				if (preparedStatement != null) {
 					preparedStatement.close();
 				}
-				
+
 				if (connection != null) {
 					connection.close();
 				}
@@ -198,7 +197,7 @@ public class DBConnection {
 		System.out.println("Input query to edit data");
 		String sqlEdit = scanner.nextLine();
 		editData(connection, sqlEdit);
-		
+
 		addCollumnPeople(connection);
 	}
 

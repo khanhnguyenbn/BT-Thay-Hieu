@@ -6,21 +6,22 @@ import java.util.List;
 import java.util.Scanner;
 
 public class FindStudent {
-	
+
 	// find student by full name , return list student
-	static List<Student> findStudentByFullName(List<Student> students, String key){
+	static List<Student> findStudentByFullName(List<Student> students, String key) {
 		List<Student> list = new ArrayList<>();
-		
+
 		for (int i = 0; i < students.size(); i++) {
-			if ((students.get(i).getFirstName() + " " + students.get(i).getLastName()).toLowerCase().contains(key.toLowerCase())) {
+			if ((students.get(i).getFirstName() + " " + students.get(i).getLastName()).toLowerCase()
+					.contains(key.toLowerCase())) {
 				list.add(students.get(i));
 			}
 		}
 		return list;
-		
+
 	}
-	
-	//test
+
+	// test
 	public static void main(String[] args) {
 		List<Student> list = new ArrayList<>();
 
@@ -41,17 +42,17 @@ public class FindStudent {
 		student3.setLastName("Pham");
 		student3.setDateOfBirth(new Date());
 		student3.setPlaceToLive("Nghe An");
-		
+
 		list.add(student1);
 		list.add(student2);
 		list.add(student3);
-		
+
 		System.out.println("input full name to search: ");
 		Scanner scanner = new Scanner(System.in);
 		String key = scanner.nextLine();
-		
+
 		List<Student> students = findStudentByFullName(list, key);
-		if(students.size() > 0) {
+		if (students.size() > 0) {
 			for (int i = 0; i < students.size(); i++) {
 				System.out.println(students.get(i).toString());
 			}
