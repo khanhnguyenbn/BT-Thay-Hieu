@@ -16,4 +16,22 @@ public class Teacher extends People {
 		// TODO Auto-generated method stub
 		return  "Teacher  firstName: " + firstName + ", lastName: " + lastName + ", dateOfBirth: " + dateOfBirth + " ,placeToLive: " + placeToLive;
 	}
+
+	public Set getSetSubjectTeaching() {
+		return setSubjectTeaching;
+	}
+
+	public void setSetSubjectTeaching(Set setSubjectTeaching) {
+		this.setSubjectTeaching = setSubjectTeaching;
+	}
+
+	public Map<Subject, Map<Student, Integer>> getStudentScoreList() {
+		return studentScoreList;
+	}
+
+	public void setStudentScoreList(Map<Subject, Map<Student, Integer>> studentScoreList) {
+		this.studentScoreList = studentScoreList;
+	}
+	
+	
 }
