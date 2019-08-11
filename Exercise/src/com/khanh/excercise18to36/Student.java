@@ -31,7 +31,7 @@ public class Student extends People{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Student firstName: " + firstName + ", lastName: " + lastName + ", dateOfBirth: " + dateOfBirth + " ,placeToLive: " + placeToLive;
+		return "Student firstName: " + getFirstName() + ", lastName: " + getLastName() + ", dateOfBirth: " + getDateOfBirth() + " ,placeToLive: " + getPlaceToLive();
 	}
 	
 	

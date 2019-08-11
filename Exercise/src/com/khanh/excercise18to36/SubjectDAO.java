@@ -10,7 +10,7 @@ public class SubjectDAO {
 	// insert subject to DB
 	public void insert(Subject subject) {
 
-		Connection connection = DBConnection.getConnection("school", "root", "123456");
+		Connection connection = DBConnection.getConnection(DBConnection.DATABASE_NAME, DBConnection.USER_NAME, DBConnection.PASSWORD);
 		String sql = "INSERT INTO tbl_Subject (subject_name, start_date, end_date) VALUES (?, ?, ?)";
 		PreparedStatement preparedStatement = null;
 		try {

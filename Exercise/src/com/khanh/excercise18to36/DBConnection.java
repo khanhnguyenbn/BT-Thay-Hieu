@@ -10,6 +10,11 @@ import java.util.Scanner;
 import com.mysql.cj.jdbc.result.ResultSetMetaData;
 
 public class DBConnection {
+	
+	public static final String DATABASE_NAME = "school";
+	public static final String USER_NAME = "root";
+	public static final String PASSWORD = "123456";
+	
 
 	static final String BASE_URL = "jdbc:mysql://localhost:3306/";
 

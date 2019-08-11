@@ -14,7 +14,7 @@ public class Teacher extends People {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return  "Teacher  firstName: " + firstName + ", lastName: " + lastName + ", dateOfBirth: " + dateOfBirth + " ,placeToLive: " + placeToLive;
+		return  "Teacher  firstName: " + getFirstName() + ", lastName: " + getLastName() + ", dateOfBirth: " + getDateOfBirth() + " ,placeToLive: " + getPlaceToLive();
 	}
 
 	public Set getSetSubjectTeaching() {

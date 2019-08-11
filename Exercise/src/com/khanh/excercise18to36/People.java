@@ -4,17 +4,13 @@ import java.util.Date;
 
 // this class can be abstract or not :)
 public abstract class People {
-	protected int id;
-	protected String firstName;
-	protected String lastName;
-	protected java.util.Date dateOfBirth;
-	protected String placeToLive;
-	protected int sex;
-	protected String hobby;
-	
-	
-	
-	
+	private int id;
+	private String firstName;
+	private String lastName;
+	private java.util.Date dateOfBirth;
+	private String placeToLive;
+	private int sex;
+	private String hobby;
 	
 	public int getId() {
 		return id;

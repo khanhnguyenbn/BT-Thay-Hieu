@@ -10,7 +10,7 @@ public class TeacherDAO {
 	// insert teacher with base information to DB
 	public void insert(Teacher teacher) {
 
-		Connection connection = DBConnection.getConnection("school", "root", "123456");
+		Connection connection = DBConnection.getConnection(DBConnection.DATABASE_NAME, DBConnection.USER_NAME, DBConnection.PASSWORD);
 		String sql = "INSERT INTO tbl_people (first_name, last_name, date_of_birth, kind) VALUES (?, ?, ?, ?)";
 		PreparedStatement preparedStatement = null;
 		try {
