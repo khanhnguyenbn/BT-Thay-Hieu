@@ -4,7 +4,7 @@ package com.khanh.excercise1to17;
 public class Excercise12 {
 	
 	
-	
+	// generate random
 	static int randomNum() {
 		int a = (int) (Integer.MAX_VALUE * Math.random());
 		return a;

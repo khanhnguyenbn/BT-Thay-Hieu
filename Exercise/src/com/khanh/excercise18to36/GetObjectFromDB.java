@@ -18,10 +18,14 @@ public class GetObjectFromDB {
 
 		// display subject and score of this student
 		Set set = student.getSubjectScore().entrySet();
+		// using itorator for get element
 		Iterator iterator = set.iterator();
 		System.out.println("List subject and score of student: ");
+		//get each element
 		while (iterator.hasNext()) {
+			// entry is each element
 			Map.Entry<Subject, Integer> entry = (Map.Entry<Subject, Integer>) iterator.next();
+			// show subjet name and score
 			System.out.println(entry.getKey().getSubjectName() + " " + entry.getValue());
 		}
 	}
